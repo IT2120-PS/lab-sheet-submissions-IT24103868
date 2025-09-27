@@ -1,34 +1,17 @@
+getwd()
 setwd("C:\\Users\\user\\Desktop\\IT24103868")
 
-Exercise
-# Part 1
-1.
-# It asks to find the distribution of X.
-# Since we have a fixed number of trials (n=50) and success probability p=0.85,
-# the distribution is Binomial.
-# Therefore:
-# X ~ Binomial(n=50, p=0.85)
 
+#Question 01
+ punif(25, min=0, max=40, lower.tail=TRUE) - punif(10, min=0, max=40, lower.tail=TRUE)
+ 
+#Question 02
+pexp(2, rate=1/3, lower.tail=TRUE)
+ 
+#Question 03
+#Part 01
+pnorm(130, mean=100, sd=15, lower.tail=FALSE)
 
-2.
-# It asks to find P(X >= 47).
-# This can be found using "dbinom" command as follows:
-prob_X_ge_47 <- sum(dbinom(47:50, size=50, prob=0.85))
-prob_X_ge_47
-# Output: 0.04604658
-
-# Part 2
-1.
-# Part 4
-# Since calls arrive on average at a constant rate (12 per hour),
-# the distribution is Poisson with parameter λ = 12.
-# Therefore:
-# X ~ Poisson(lambda=12)
-2.
-# Part 5
-# It asks to find P(X = 15).
-# This can be found using "dpois" command as follows:
-prob_X_eq_15 <- dpois(15, lambda=12)
-prob_X_eq_15
-# Output: 0.07239112
+#Part 02
+qnorm(0.95, mean=100, sd=15, lower.tail=TRUE)
 
